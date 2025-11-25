@@ -120,7 +120,7 @@ LOOKBACK_PERIOD_MINUTES=60         # Feature lookback window
 1. **Data Collection**: Fetches minute-by-minute OHLCV data from Binance
 2. **Feature Engineering**: Calculates 60+ technical indicators (RSI, MACD, correlations, etc.)
 3. **ML Prediction**: Gradient Boosting models predict long/short signals
-4. **Signal Filtering**: Only executes trades with 60%+ confidence
+4. **Signal Filtering**: Only executes trades with x%+ confidence (set to 50% to begin)
 5. **Trade Execution**: Places orders on Hyperliquid with risk management
 6. **Performance Tracking**: Logs trades, calculates PnL, tracks metrics
 7. **Self-Learning**: Retrains models every 14 days with latest data
@@ -140,7 +140,7 @@ Each model analyzes:
 - **Stop Loss**: Automatic exit at -2%
 - **Take Profit**: Automatic exit at +3%
 - **Time Limit**: Maximum 4-hour hold time
-- **Confidence Filter**: Minimum 60% ML confidence
+- **Confidence Filter**: Minimum x% ML confidence (set to 50% to begin)
 - **Max Positions**: Limits concurrent trades
 
 ## 📊 Monitoring
